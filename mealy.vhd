@@ -39,6 +39,8 @@ begin
                 if x = '1' then
                     y <= '1';
                 end if;
+            when others =>
+                nextState <= s0; 
         end case;
     end process;
     
